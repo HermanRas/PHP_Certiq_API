@@ -20,9 +20,38 @@ foreach ($machines as $machinesId) {
     $POST_Data = array();
     $data = curl($url,$HEAD_Data,$POST_Data);
     $data = json_decode($data,true);
-    foreach ($data as $key => $value) {
-        echo "<b>Column:</b>$key <b>Value:</b>$value<br>";
-    }
-    echo "<br>";
+    $sql = "INSERT INTO [dbo].[Machine]
+            (Id,
+                ItemNumber,
+                Name,
+                Company,
+                Site,
+                Type,
+                Model,
+                Latitude,
+                Longitude,
+                TimeZone,
+                LastContact,
+                LastData) 
+            VALUES
+                ('".$data["machineItemNumber"]."',
+                '".$data["machineId"]."',
+                '".$data["machineName"]."',
+                '".$data["machineCompany"]."',
+                '".$data["machineSite"]."',
+                '".$data["machineType"]."',
+                '".$data["machineModel"]."',
+                '".$data["machineLatitude"]."',
+                '".$data["machineLongitude"]."',
+                '".$data["machineTimeZone"]."',
+                '".$data["machineLastContact"]."',
+                '".$data["machineLastData"]."');";
+
+echo $sql;
+
+        $sqlargs = array();
+        require_once 'config/db_query.php'; 
+        sqlQuery($sql,$sqlargs);
+    die;
 }
 ?>
