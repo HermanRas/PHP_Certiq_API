@@ -36,12 +36,30 @@ foreach ($machines as $machinesId) {
     $data = curl($url,$HEAD_Data,$POST_Data);
     $data = json_decode($data,true);
     foreach ($data['data'] as $rec) {
-        echo "<b>Column:</b>ItemNumber <b>Value:</b>$machinesId<br>";
-        foreach ($rec as $key => $value) {
-            echo "<b>Column:</b>$key <b>Value:</b>$value<br>";
-        }
-        echo "<br>";
+        $sql = "INSERT INTO [dbo].[AlarmStatusHistory]
+                (ItemNumber,
+                AlarmId,
+                Name,
+                Description,
+                NodeIndex,
+                Level,
+                Time,
+                Value,
+                AcknowledgedBy) 
+            VALUES
+                ('".$machinesId."',
+                '".$rec["alarmId"]."',
+                '".$rec["alarmName"]."',
+                '".$rec["alarmDescription"]."',
+                '".$rec["alarmNodeIndex"]."',
+                '".$rec["alarmLevel"]."',
+                '".$rec["alarmTime"]."',
+                '".$rec["alarmValue"]."',
+                '".$rec["alarmAcknowledgedBy"]."');";
+
+        $sqlargs = array();
+        require_once 'config/db_query.php'; 
+        sqlQuery($sql,$sqlargs);
     }
-    echo "<br>";
 }
 ?>

@@ -22,12 +22,28 @@ foreach ($machines as $machinesId) {
     $data = json_decode($data,true);
 
     foreach ($data as $rec) {
-        echo "<b>Column:</b>ItemNumber <b>Value:</b>$machinesId<br>";
-        foreach ($rec as $key => $value) {
-            echo "<b>Column:</b>$key <b>Value:</b>$value<br>";
-        }
-        echo "<br>";
+    $sql = "INSERT INTO [dbo].[AlarmStatus]
+            (   ItemNumber,
+                Id,
+                Name,
+                Description,
+                NodeIndex,
+                Level,
+                Time,
+                Value) 
+        VALUES
+            ('".$machinesId."',
+            '".$rec["alarmId"]."',
+            '".$rec["alarmName"]."',
+            '".$rec["alarmDescription"]."',
+            '".$rec["alarmNodeIndex"]."',
+            '".$rec["alarmLevel"]."',
+            '".$rec["alarmTime"]."',
+            '".$rec["alarmValue"]."');";
+
+        $sqlargs = array();
+        require_once 'config/db_query.php'; 
+        sqlQuery($sql,$sqlargs);
     }
-    echo "<br>";
 }
 ?>

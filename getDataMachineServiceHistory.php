@@ -36,12 +36,30 @@ foreach ($machines as $machinesId) {
     $data = curl($url,$HEAD_Data,$POST_Data);
     $data = json_decode($data,true);
     foreach ($data['data'] as $rec) {
-        echo "<b>Column:</b>ItemNumber <b>Value:</b>$machinesId<br>";
-        foreach ($rec as $key => $value) {
-            echo "<b>Column:</b>$key <b>Value:</b>$value<br>";
-        }
-        echo "<br>";
+        $sql = "INSERT INTO [dbo].[ServiceHistory]
+                    (ItemNumber,
+                    Id,
+                    Accumulator,
+                    Interval,
+                    Description,
+                    Type,
+                    NodeIndex,
+                    ReportedDate,
+                    Status) 
+                VALUES
+                    ('".$machinesId."',
+                    '".$rec["serviceId"]."',
+                    '".$rec["serviceAccumulator"]."',
+                    '".$rec["serviceInterval"]."',
+                    '".$rec["serviceDescription"]."',
+                    '".$rec["serviceType"]."',
+                    '".$rec["serviceNodeIndex"]."',
+                    '".$rec["serviceReportedDate"]."',
+                    '".$rec["serviceStatus"]."');";
+
+            $sqlargs = array();
+            require_once 'config/db_query.php'; 
+            sqlQuery($sql,$sqlargs);
     }
-    echo "<br>";
 }
 ?>

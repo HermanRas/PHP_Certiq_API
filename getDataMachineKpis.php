@@ -36,12 +36,64 @@ foreach ($machines as $machinesId) {
     $data = curl($url,$HEAD_Data,$POST_Data);
     $data = json_decode($data,true);
     foreach ($data as $rec) {
-        echo "<b>Column:</b>ItemNumber <b>Value:</b>$machinesId<br>";
-        foreach ($rec as $key => $value) {
-            echo "<b>Column:</b>$key <b>Value:</b>$value<br>";
-        }
-        echo "<br>";
+        $sql = "INSERT INTO [dbo].[KPIs]
+                    (ItemNumber,
+                    date,
+                    dailyDrillHours,
+                    dailyDrillMeters,
+                    dailyDrillMetersPerEngineHour,
+                    dailyDrillMetersPerDrillHour,
+                    dailyDrillHoursPerEngineHour,
+                    dailyDrillHoles,
+                    dailyFuelLiters,
+                    dailyFuelLitersPerHour,
+                    dailyFuelCO2Emission,
+                    dailyFuelLitersPerTonnes,
+                    dailyFuelLitersPerMeter,
+                    dailyLoadingTonnes,
+                    dailyLoadingTonnesPerHour,
+                    dailyLoadingNumberOfBuckets,
+                    dailyLoadingTonnesPerBucket,
+                    dailyLoadingNumberOfBoxes,
+                    dailyLoadingTonnesPerBox,
+                    dailyUtilizationAvailableHours,
+                    dailyUtilizationWorkedHours,
+                    dailyUtilizationDrillHours,
+                    dailyUtilizationHydraulicPumpHours,
+                    dailyUtilizationTrammingHours,
+                    dailyUtilizationIdleHours,
+                    dailyUtilizationEngineHours) 
+                VALUES
+                    ('".$machinesId."',
+                    '".$rec["date"]."',
+                    '".$rec["dailyDrillHours"]."',
+                    '".$rec["dailyDrillMeters"]."',
+                    '".$rec["dailyDrillMetersPerEngineHour"]."',
+                    '".$rec["dailyDrillMetersPerDrillHour"]."',
+                    '".$rec["dailyDrillHoursPerEngineHour"]."',
+                    '".$rec["dailyDrillHoles"]."',
+                    '".$rec["dailyFuelLiters"]."',
+                    '".$rec["dailyFuelLitersPerHour"]."',
+                    '".$rec["dailyFuelCO2Emission"]."',
+                    '".$rec["dailyFuelLitersPerTonnes"]."',
+                    '".$rec["dailyFuelLitersPerMeter"]."',
+                    '".$rec["dailyLoadingTonnes"]."',
+                    '".$rec["dailyLoadingTonnesPerHour"]."',
+                    '".$rec["dailyLoadingNumberOfBuckets"]."',
+                    '".$rec["dailyLoadingTonnesPerBucket"]."',
+                    '".$rec["dailyLoadingNumberOfBoxes"]."',
+                    '".$rec["dailyLoadingTonnesPerBox"]."',
+                    '".$rec["dailyUtilizationAvailableHours"]."',
+                    '".$rec["dailyUtilizationWorkedHours"]."',
+                    '".$rec["dailyUtilizationDrillHours"]."',
+                    '".$rec["dailyUtilizationHydraulicPumpHours"]."',
+                    '".$rec["dailyUtilizationTrammingHours"]."',
+                    '".$rec["dailyUtilizationIdleHours"]."',
+                    '".$rec["dailyUtilizationEngineHours"]."');";
+
+            $sqlargs = array();
+            require_once 'config/db_query.php'; 
+            sqlQuery($sql,$sqlargs);
     }
-    echo "<br>";
 }
 ?>

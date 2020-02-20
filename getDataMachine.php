@@ -47,11 +47,8 @@ foreach ($machines as $machinesId) {
                 '".$data["machineLastContact"]."',
                 '".$data["machineLastData"]."');";
 
-echo $sql;
-
         $sqlargs = array();
         require_once 'config/db_query.php'; 
         sqlQuery($sql,$sqlargs);
-    die;
 }
 ?>

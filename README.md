@@ -44,10 +44,22 @@
 - DONE 2020-02-20 Built CURL Function
 - DONE 2020-02-20 Built XAuth With Token
 - DONE 2020-02-20 Built Machine Info Query
+- DONE 2020-02-20 Built Machine Alarm Status
+- DONE 2020-02-20 Built Machine Alarm History
+- DONE 2020-02-20 Built Machine Service History
+- DONE 2020-02-20 Built Machine Service Status
+- DONE 2020-02-20 Built Machine KPIs
+- DONE 2020-02-20 Built Machine Info DB Writer
+- DONE 2020-02-20 Built Machine Alarm Status DB Writer
+- DONE 2020-02-20 Built Machine Alarm History DB Writer
+- DONE 2020-02-20 Built Machine Service History DB Writer
+- DONE 2020-02-20 Built Machine Service Status DB Writer
+- DONE 2020-02-20 Built Machine KPIs DB Writer
 
 
 ## To-Do 
 - NONE
+- Add start end end time stamp for schedular
 
 ## Look-At-Implementing
 - NONE
