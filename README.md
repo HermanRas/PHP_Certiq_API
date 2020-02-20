@@ -3,8 +3,8 @@
 
 ## Issues Tracking
 ### Issues Tracking: Total Logged !
- - [![Open Issues](https://img.shields.io/github/issues/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/issues)
-[!["Closed Issues"](https://img.shields.io/github/issues-closed/HermanRas/MiningDelays.svg?style=flat-square)](https://github.com/HermanRas/PHP_Certiq_API/issues)
+ - [![Open Issues](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API.svg)](https://github.com/HermanRas/PHP_Certiq_API/issues)
+[!["Closed Issues"](https://img.shields.io/github/issues-closed/HermanRas/PHP_Certiq_API.svg?style=flat-square)](https://github.com/HermanRas/PHP_Certiq_API/issues)
 ### Issues Tracking: by type
  - [!["To Do"](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API/help%20wanted.svg)](https://github.com/HermanRas/PHP_Certiq_API/labels/help%20wanted)
 [!["Look At"](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API/enhancement.svg)](https://github.com/HermanRas/PHP_Certiq_API/labels/enhancement)
@@ -12,13 +12,13 @@
 [!["Confirm Scope"](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API/question.svg)](https://github.com/HermanRas/PHP_Certiq_API/labels/question)
 
 ### Latest Release
- - [!["Latest Release"](https://img.shields.io/github/release/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
-[!["Release Date"](https://img.shields.io/github/release-date/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+ - [!["Latest Release"](https://img.shields.io/github/release/HermanRas/PHP_Certiq_API.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+[!["Release Date"](https://img.shields.io/github/release-date/HermanRas/PHP_Certiq_API.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
 
 ### Latest Dev Build
- - [!["Latest Release"](https://img.shields.io/github/release-pre/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
-[!["Release Date"](https://img.shields.io/github/release-date-pre/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
-[!["Last Updated"](https://img.shields.io/github/last-commit/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+ - [!["Latest Release"](https://img.shields.io/github/release-pre/HermanRas/PHP_Certiq_API.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+[!["Release Date"](https://img.shields.io/github/release-date-pre/HermanRas/PHP_Certiq_API.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+[!["Last Updated"](https://img.shields.io/github/last-commit/HermanRas/PHP_Certiq_API.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
 
 ### Requirements
  - [!["PHP 7.2"](https://img.shields.io/badge/PHP-7.2%5E-blue.svg)](https://www.php.net/)(php7.2-xml, php7.2-mbstring, php7.2-zip)
