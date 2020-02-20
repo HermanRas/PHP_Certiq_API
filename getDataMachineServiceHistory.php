@@ -27,7 +27,7 @@ if(isset($_GET['StartDate'])){
 };
 
 foreach ($machines as $machinesId) {
-    $url = "https://api.epiroc.com/certiq/v2/machines/".$machinesId."/serviceHistory?start=$StartDate&end=$StopDate";
+    $url = $BaseURL.$machinesId."/serviceHistory?start=$StartDate&end=$StopDate";
     $HEAD_Data = array(
         'X-Auth-Token:'.$AuthToken['userCode'],
         'Ocp-Apim-Subscription-Key:'.$SubscriptionKey

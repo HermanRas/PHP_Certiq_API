@@ -12,7 +12,7 @@ $machines = array(
 );
 
 foreach ($machines as $machinesId) {
-    $url = "https://api.epiroc.com/certiq/v2/machines/".$machinesId."/alarmStatus";
+    $url = $BaseURL.$machinesId."/alarmStatus";
     $HEAD_Data = array(
         'X-Auth-Token:'.$AuthToken['userCode'],
         'Ocp-Apim-Subscription-Key:'.$SubscriptionKey
