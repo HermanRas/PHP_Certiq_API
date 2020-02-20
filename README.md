@@ -1,24 +1,24 @@
 # Mining Delays
-<img src="https://github.com/HermanRas/MiningDelays/blob/master/img/Logo.jpg" alt="#PetraLogo">
+<img src="https://github.com/HermanRas/PHP_Certiq_API/blob/master/img/Logo.jpg" alt="#PetraLogo">
 
 ## Issues Tracking
 ### Issues Tracking: Total Logged !
- - [![Open Issues](https://img.shields.io/github/issues/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/MiningDelays/issues)
-[!["Closed Issues"](https://img.shields.io/github/issues-closed/HermanRas/MiningDelays.svg?style=flat-square)](https://github.com/HermanRas/MiningDelays/issues)
+ - [![Open Issues](https://img.shields.io/github/issues/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/issues)
+[!["Closed Issues"](https://img.shields.io/github/issues-closed/HermanRas/MiningDelays.svg?style=flat-square)](https://github.com/HermanRas/PHP_Certiq_API/issues)
 ### Issues Tracking: by type
- - [!["To Do"](https://img.shields.io/github/issues/HermanRas/MiningDelays/help%20wanted.svg)](https://github.com/HermanRas/MiningDelays/labels/help%20wanted)
-[!["Look At"](https://img.shields.io/github/issues/HermanRas/MiningDelays/enhancement.svg)](https://github.com/HermanRas/MiningDelays/labels/enhancement)
-[!["Open Bug"](https://img.shields.io/github/issues/HermanRas/MiningDelays/bug.svg)](https://github.com/HermanRas/MiningDelays/labels/bug)
-[!["Confirm Scope"](https://img.shields.io/github/issues/HermanRas/MiningDelays/question.svg)](https://github.com/HermanRas/MiningDelays/labels/question)
+ - [!["To Do"](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API/help%20wanted.svg)](https://github.com/HermanRas/PHP_Certiq_API/labels/help%20wanted)
+[!["Look At"](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API/enhancement.svg)](https://github.com/HermanRas/PHP_Certiq_API/labels/enhancement)
+[!["Open Bug"](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API/bug.svg)](https://github.com/HermanRas/PHP_Certiq_API/labels/bug)
+[!["Confirm Scope"](https://img.shields.io/github/issues/HermanRas/PHP_Certiq_API/question.svg)](https://github.com/HermanRas/PHP_Certiq_API/labels/question)
 
 ### Latest Release
- - [!["Latest Release"](https://img.shields.io/github/release/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/MiningDelays/releases)
-[!["Release Date"](https://img.shields.io/github/release-date/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/MiningDelays/releases)
+ - [!["Latest Release"](https://img.shields.io/github/release/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+[!["Release Date"](https://img.shields.io/github/release-date/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
 
 ### Latest Dev Build
- - [!["Latest Release"](https://img.shields.io/github/release-pre/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/MiningDelays/releases)
-[!["Release Date"](https://img.shields.io/github/release-date-pre/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/MiningDelays/releases)
-[!["Last Updated"](https://img.shields.io/github/last-commit/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/MiningDelays/releases)
+ - [!["Latest Release"](https://img.shields.io/github/release-pre/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+[!["Release Date"](https://img.shields.io/github/release-date-pre/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
+[!["Last Updated"](https://img.shields.io/github/last-commit/HermanRas/MiningDelays.svg)](https://github.com/HermanRas/PHP_Certiq_API/releases)
 
 ### Requirements
  - [!["PHP 7.2"](https://img.shields.io/badge/PHP-7.2%5E-blue.svg)](https://www.php.net/)(php7.2-xml, php7.2-mbstring, php7.2-zip)
@@ -41,16 +41,13 @@
 
 
 ## ChangeLog
-- DONE 2020-02-14 Fixed Breakdown Hours
-- DONE 2020-02-14 Merged Workflow to 2 pages with client side filters
-- DONE 2020-02-17 added Start date to summary page and added default sort by start date DESC
-- DONE 2020-02-17 added breakdown hours to view all page
-- DONE 2020-02-17 added breakdown hours to view all page
-- Done 2020-02-18 formated Breakdown hours to 00h 00m format
-- DONE 2020-02-18 Patched Support for Operational Delays Added to Database
+- DONE 2020-02-20 Built CURL Function
+- DONE 2020-02-20 Built XAuth With Token
+- DONE 2020-02-20 Built Machine Info Query
 
-## To-Do Induction
-- Update usernames with access to maintenance tables
+
+## To-Do 
+- NONE
 
 ## Look-At-Implementing
 - NONE
