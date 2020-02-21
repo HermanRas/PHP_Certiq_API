@@ -13,7 +13,7 @@ $machines = array(
 
 //setup Start Parameters
 $StartDate = new DateTime();
-$StartDate = $StartDate->format('Y-m-19');
+$StartDate = $StartDate->format('Y-m-1');
 if(isset($_GET['StartDate'])){
     $StartDate = $_GET['StartDate'];   
 };
