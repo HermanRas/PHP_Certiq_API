@@ -21,9 +21,9 @@ if(isset($_GET['StartDate'])){
 
 //setup Stop Parameters
 $StopDate = new DateTime();
-$StopDate = $StopDate->format('Y-m-d');
+$StopDate = $StopDate->format('Y-m-t');
 if(isset($_GET['StartDate'])){
-  $StartDate = $_GET['StartDate'];   
+  $StartDate = $_GET['StartDate'];
 };
 
 foreach ($machines as $machinesId) {
